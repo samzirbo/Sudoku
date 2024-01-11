@@ -29,7 +29,7 @@ increasing thread count led to longer execution times as the overhead of thread 
 
 
 | Threads/Size | 9x9 | 16x16 | 49x49 |
-|--------------|-----|-------|-------|
+|:------------:|:---:|:-----:|:-----:|
 | 1            |     |       |       |
 | 2            |     |       |       |
 | 4            |     |       |       |
