@@ -305,7 +305,7 @@ class Sudoku:
         """
         new_path = self.path.replace(".csv", "_solution.csv")
         df = pd.DataFrame(self.board)
-        if self.n > 9:
+        if self.n ** 2 > 9:
             df.replace(self.decode, inplace=True)
         df.to_csv(new_path, index=False, header=False)
 
@@ -325,14 +325,14 @@ class Sudoku:
         :return: str
         """
         df = pd.DataFrame(self.board)
-        if self.n > 9:
+        if self.n ** 2 > 9:
             df.replace(self.decode, inplace=True)
         return df.to_string(index=False, header=False)
 
 if __name__ == '__main__':
     threads = 8
 
-    sudoku = Sudoku("Puzzles/49x49.csv", 49, threads)
+    sudoku = Sudoku("Puzzles/16x16.csv", 49, threads)
     #########################################
     start = time.time()
     sudoku.solve()
