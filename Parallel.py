@@ -332,7 +332,7 @@ class Sudoku:
 if __name__ == '__main__':
     threads = 8
 
-    sudoku = Sudoku("16x16.csv", 16, threads)
+    sudoku = Sudoku("Puzzles/49x49.csv", 49, threads)
     #########################################
     start = time.time()
     sudoku.solve()
