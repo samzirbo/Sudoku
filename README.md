@@ -28,12 +28,12 @@ increasing thread count led to longer execution times as the overhead of thread 
 - **Distributed Algorithm** - _using MPI_
 
 
-| Threads/Size | 9x9 | 16x16 | 49x49 |
-|:------------:|:---:|:-----:|:-----:|
-| 1            |     |       |       |
-| 2            |     |       |       |
-| 4            |     |       |       |
-| 8            |     |       |       |
+| Threads/Size |  9x9   | 16x16  | 49x49  |
+|:------------:|:------:|:------:|:------:|
+| 1            | 0.001s | 0.009s | 0.123s |
+| 2            | 0.003s | 0.034s | 1.024s |
+| 4            | 0.005s | 0.055s | 1.337s |
+| 8            | 0.032s | 0.213s | 2.163s |
 
 ---
 ## Contributors
